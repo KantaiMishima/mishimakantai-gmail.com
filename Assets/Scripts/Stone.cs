@@ -25,5 +25,6 @@ public class Stone : MonoBehaviour
         if (other.tag == "Player") {
             SceneManager.LoadScene("gameOver");
         }
+        Destroy(this.gameObject);
     }
 }

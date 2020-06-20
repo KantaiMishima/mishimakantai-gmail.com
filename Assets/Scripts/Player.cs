@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public float speed = 3;
     public float maxAngularVelocity = 1;
     public float maxVelocity = 10;
-    public GameObject camera;
+    public GameObject playerCamera;
     private Rigidbody preyerRb;
 
     private float PowTwo(float baseFloat)
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        preyerRb.AddForce(camera.transform.forward * 3);
+        preyerRb.AddForce(playerCamera.transform.forward * 3);
         var vel = preyerRb.velocity;
         var magnification = (PowTwo(vel.x) + PowTwo(vel.y) + PowTwo(vel.z)) / maxVelocity;
         if (magnification > 1)

@@ -1455,7 +1455,13 @@ MonoBehaviour:
   speed: 0.1
   maxAngularVelocity: 1
   maxVelocity: 10
-  camera: {fileID: 1856394956}
+  playerCamera: {fileID: 1302711623}
+--- !u!1 &1302711623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1325129670532142, guid: 54a613ba6e982e84db04156af08d6a89,
+    type: 3}
+  m_PrefabInstance: {fileID: 1302711618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1451920843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1931,12 +1937,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e57e26a714804d3c9f1baa605131856, type: 3}
---- !u!1 &1856394956 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1854678450583440, guid: 54a613ba6e982e84db04156af08d6a89,
-    type: 3}
-  m_PrefabInstance: {fileID: 1302711618}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1898865630
 PrefabInstance:
   m_ObjectHideFlags: 0
