@@ -227,8 +227,9 @@ GameObject:
   - component: {fileID: 688595569}
   - component: {fileID: 688595568}
   - component: {fileID: 688595567}
+  - component: {fileID: 688595571}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,6 +307,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688595571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688595566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78177cb8e9ded7641b30c7153620ca28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialHP: 5
 --- !u!1 &700291663
 GameObject:
   m_ObjectHideFlags: 0
