@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Stone : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     [SerializeField]
     private float speed = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +22,7 @@ public class Stone : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
-            SceneManager.LoadScene("gameOver");
-        }
-        if (other.tag != "Enemy" && other.tag != "Bullet") {
+        if (other.tag != "Enemy") {
             Destroy(this.gameObject);
         }
     }
